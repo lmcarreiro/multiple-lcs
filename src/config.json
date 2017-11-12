@@ -1,6 +1,0 @@
-{
-    "scannerExtensionsMap": {
-        "XmlScanner": ["xml", "html"],
-        "TypeScriptScanner": ["ts", "js", "json"]
-    }
-}

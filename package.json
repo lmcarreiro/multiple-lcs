@@ -1,28 +1,26 @@
 {
-    "version": "0.0.1-dev.20171112.4",
-    "name": "smart-column-indenter",
-    "description": "A smart source code indenter that indent the code into columns",
+    "version": "0.0.1-dev.20171112",
+    "name": "multiple-lcs",
+    "description": "The Longest Common Subsequence algorithm for multiple input sequences",
     "keywords": [
-        "indent",
-        "indenter",
-        "indentation",
-        "table",
-        "column"
+        "lcs",
+        "mlcs",
+        "multiple-lcs",
+        "longest common subsequence",
+        "multiple longest common subsequence"
     ],
-    "homepage": "https://github.com/lmcarreiro/smart-column-indenter",
+    "homepage": "https://github.com/lmcarreiro/multiple-lcs",
     "author": "Leonardo Machado Carreiro <leonardo.mcarreiro@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lmcarreiro/smart-column-indenter"
+        "url": "https://github.com/lmcarreiro/multiple-lcs"
     },
     "bugs": {
-        "url": "https://github.com/lmcarreiro/smart-column-indenter/issues"
+        "url": "https://github.com/lmcarreiro/multiple-lcs/issues"
     },
     "devDependencies": {
         "@types/node": "latest",
-        "@types/request": "latest",
         "@types/mocha": "latest",
-        "request": "latest",
         "mocha": "latest",
         "typescript": "latest"
     },
