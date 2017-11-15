@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1-dev.20171115",
+    "version": "0.0.1-dev.20171115.2",
     "name": "multiple-lcs",
     "description": "(This package is incomplete and anything can change anytime. I'll write some docs before I publish the first version.) The Longest Common Subsequence algorithm for multiple input sequences",
     "keywords": [
