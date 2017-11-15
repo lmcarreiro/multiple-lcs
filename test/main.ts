@@ -1,5 +1,5 @@
-import Sequence from "./Sequence";
-import LCS      from "./LCS";
+import Sequence from "../src/Sequence";
+import LCS      from "../src/LCS";
 
 main();
 
