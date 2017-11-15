@@ -27,9 +27,8 @@
     "main": "index.js",
     "scripts": {
         "prepack": "npm run build",
-        "start": "npm run build && npm run build:test && node test/main.js",
-        "test": "npm run build && npm run build:test && mocha",
-        "build": "tsc -p tsconfig.json",
-        "build:test": "tsc -p tsconfig-test.json"
+        "start": "npm run build && node test/main.js",
+        "test": "npm run build && mocha",
+        "build": "tsc -p tsconfig.json"
     }
 }
