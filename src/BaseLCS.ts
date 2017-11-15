@@ -1,5 +1,6 @@
 import Sequence from "./Sequence";
 import { lcs as lcsOf2 } from "./LCSof2usingDP";
+import intersection from "./intersection";
 
 export default abstract class BaseLCS
 {
@@ -52,8 +53,8 @@ export default abstract class BaseLCS
      */
     private filterSequencesByIntersection(sequences: Sequence[]): Sequence[]
     {
-        const intersection = Sequence.intersection(sequences);
-        return sequences.map(s => s.filter(e => intersection.has(e)));
+        const seqIntersection = intersection(sequences);
+        return sequences.map(s => s.filter(e => seqIntersection.has(e)));
     }
 
     /**
