@@ -18,17 +18,21 @@
     "bugs": {
         "url": "https://github.com/lmcarreiro/multiple-lcs/issues"
     },
-    "devDependencies": {
-        "@types/node": "latest",
-        "@types/mocha": "latest",
-        "mocha": "latest",
-        "typescript": "latest"
-    },
     "main": "index.js",
     "scripts": {
         "prepack": "npm run build",
         "start": "npm run build && node test/main.js",
         "test": "npm run build && mocha",
         "build": "tsc -p tsconfig.json"
+    },
+    "dependencies": {
+        "@types/lodash.intersection": "^4.4.3",
+        "lodash.intersection": "^4.4.0"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "@types/mocha": "latest",
+        "mocha": "latest",
+        "typescript": "latest"
     }
 }

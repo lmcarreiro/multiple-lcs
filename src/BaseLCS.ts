@@ -1,6 +1,6 @@
 import Sequence from "./Sequence";
 import { lcs as lcsOf2 } from "./LCSof2usingDP";
-import intersection from "./intersection";
+import _intersection = require("lodash.intersection");
 
 export default abstract class BaseLCS
 {
@@ -53,8 +53,8 @@ export default abstract class BaseLCS
      */
     private filterSequencesByIntersection(sequences: Sequence[]): Sequence[]
     {
-        const seqIntersection = intersection(sequences);
-        return sequences.map(s => s.filter(e => seqIntersection.has(e)));
+        const intersection = new Set(_intersection(...sequences));
+        return sequences.map(s => s.filter(e => intersection.has(e)));
     }
 
     /**

@@ -1,6 +1,6 @@
 import BaseLCS from "./BaseLCS";
 import Sequence from "./Sequence";
-import intersection from './intersection';
+import _intersection = require('lodash.intersection');
 
 export default class IncrementalIntersectionLCS extends BaseLCS
 {
@@ -9,10 +9,10 @@ export default class IncrementalIntersectionLCS extends BaseLCS
         const lengthBiggerSequence = Math.max(...sequences.map(s => s.length));
 
         for (let i = 1; i <= lengthBiggerSequence; i++) {
-            const seqIntersection = intersection(sequences.map(s => s.slice(0, i)));
+            const intersection = _intersection(...sequences.map(s => s.slice(0, i)));
 
-            if (seqIntersection.size) {
-                const intersectionValue = seqIntersection.values().next().value;
+            if (intersection.length) {
+                const intersectionValue = intersection[0];
                 const sequencesAfterValue = sequences.map(s => s.slice(s.indexOf(intersectionValue) + 1));
                 return [intersectionValue, ...this.execute(sequencesAfterValue)];
             }
